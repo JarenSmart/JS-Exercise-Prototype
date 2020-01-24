@@ -44,10 +44,13 @@ function Person(name, age) {
   this.age = age;
 }
 
-Person.prototype.eat = function("someFood") {
-  return this.stomach.push["someFood"];
-  
-  
+Person.prototype.eat = function(someFood) {
+  if (this.stomach.length < 10) {
+    this.stomach.push(someFood);
+  }
+
+  // return this.stomach.push["someFood"];
+
   // for (let i = 0; this.stomach.length <= 10; i++) {
   // NO IDEA...
   // }
@@ -84,7 +87,7 @@ function Car(model, milesPerGallon) {
 }
 
 Car.prototype.fill = function(gallons) {
-  this.tank + gallons;  //WHAT IS GOING ON?
+  this.tank + gallons;
   return this.tank;
 };
 
@@ -103,7 +106,7 @@ function Baby(name, age, favoriteToy) {
 
 Baby.prototype = Object.create(Person.prototype);
 Baby.prototype.play = function() {
-  return `Playing with ${this.favoriteToy}`;    //IS THIS NOT WORKING BECAUSE OF FIRST PROBLEM
+  return `Playing with ${this.favoriteToy}`;
 };
 
 /* 

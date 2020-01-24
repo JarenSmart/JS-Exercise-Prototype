@@ -45,9 +45,12 @@ function Person(name, age) {
 }
 
 Person.prototype.eat = function("someFood") {
-  for (let i = 0; this.stomach.length <= 10; i++) {
-    //NO IDEA...
-  }
+  return this.stomach.push["someFood"];
+  
+  
+  // for (let i = 0; this.stomach.length <= 10; i++) {
+  // NO IDEA...
+  // }
 };
 
 Person.prototype.poop = function() {
@@ -100,7 +103,7 @@ function Baby(name, age, favoriteToy) {
 
 Baby.prototype = Object.create(Person.prototype);
 Baby.prototype.play = function() {
-  return `Playing with ${this.favoriteToy}`;    //IS THIS NOT WORKING BECAUSE OF FIRST PROBLEM?
+  return `Playing with ${this.favoriteToy}`;    //IS THIS NOT WORKING BECAUSE OF FIRST PROBLEM
 };
 
 /* 
